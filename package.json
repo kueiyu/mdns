@@ -1,0 +1,11 @@
+{
+  "name": "mdns",
+  "version": "1.0.0",
+  "description": "mdns module test",
+  "main": "index.js",
+  "author": "Dennis",
+  "license": "MIT",
+  "dependencies": {
+    "multicast-dns": "^7.2.5"
+  }
+}
