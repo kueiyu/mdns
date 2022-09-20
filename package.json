@@ -13,5 +13,9 @@
   },
   "devDependencies": {
     "@types/multicast-dns": "^7.2.1"
+  },
+  "scripts": {
+    "js": "node ./index.js",
+    "ts": "node --loader ts-node/esm ./index.ts"
   }
 }
