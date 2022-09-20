@@ -5,7 +5,13 @@
   "main": "index.js",
   "author": "Dennis",
   "license": "MIT",
+  "type": "commonjs",
   "dependencies": {
-    "multicast-dns": "^7.2.5"
+    "multicast-dns": "^7.2.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.3"
+  },
+  "devDependencies": {
+    "@types/multicast-dns": "^7.2.1"
   }
 }
