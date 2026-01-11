@@ -1,18 +1,13 @@
-import makeMdns from "multicast-dns";
-const mdns = makeMdns();
+import { startMdnsServer } from './server.js';
 
-mdns.on('response', function (response) {
-    console.log('got a response packet:', response)
-})
+// Start the server
+const server = startMdnsServer();
 
-mdns.on('query', function (query) {
-    console.log('got a query packet:', query)
-})
-
-// lets query for an A record for 'brunhilde.local'
-mdns.query({
+// Example: Query immediately
+console.log(`[Query] Broadcasting search for 'brunhilde.local'...`);
+server.query({
     questions: [{
         name: 'brunhilde.local',
         type: 'A'
     }]
-})
+});

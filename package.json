@@ -5,17 +5,22 @@
   "main": "index.js",
   "author": "Dennis",
   "license": "MIT",
-  "type": "commonjs",
+  "type": "module",
   "dependencies": {
     "multicast-dns": "^7.2.5",
-    "ts-node": "^10.9.1",
-    "typescript": "^4.8.3"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
-    "@types/multicast-dns": "^7.2.1"
+    "@types/multicast-dns": "^7.2.4",
+    "@types/node": "^25.0.6",
+    "tsx": "^4.21.0",
+    "vitest": "^1.4.0"
   },
   "scripts": {
-    "js": "node ./index.js",
-    "ts": "node --loader ts-node/esm ./index.ts"
+    "js": "node index.js",
+    "ts": "tsx index.ts",
+    "test": "vitest"
   }
 }

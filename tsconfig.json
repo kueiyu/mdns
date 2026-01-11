@@ -1,5 +1,11 @@
 {
-    "compilerOptions": {
-        "esModuleInterop": true
-    }
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true
+  },
+  "ts-node": {
+    "esm": true
+  }
 }
